@@ -31,7 +31,7 @@ public class AlotSrvc {
     public String gnrtCoalAllotment(@PathParam("alotmentDvsn") String alotDvsn, @PathParam("alotmentDate") String alotDate){
         
         if(alotDvsn!=null && alotDate!=null)
-            return "<html><body bgcolor='#042' text='white'><h2>Coal Allotment for "+alotDate+" has been generated successfully!!</h2></body></html>";
+            return "<html><body bgcolor='#042' text='white'><h2>Coal Allotment for "+alotDate+" has been generated successfully!! for "+alotDvsn+"</h2></body></html>";
         else 
             return "<html><body bgcolor='#042' text='white'><h2>InSufficient Inputs For Allotment Generation...</h2></body></html>";
         
